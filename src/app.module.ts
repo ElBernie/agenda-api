@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { join } from 'path/posix';
-
+import * as path from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { EventEntity } from './events/event.entity';
@@ -19,7 +18,7 @@ import { EventsModule } from './events/events.module';
       autoLoadEntities: true,
     }),
     GraphQLModule.forRoot({
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      autoSchemaFile: path.join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
     }),
     EventsModule,
