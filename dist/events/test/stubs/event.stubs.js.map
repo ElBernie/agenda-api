@@ -1,1 +1,0 @@
-{"version":3,"file":"event.stubs.js","sourceRoot":"","sources":["../../../../src/events/test/stubs/event.stubs.ts"],"names":[],"mappings":";;;AAAO,MAAM,UAAU,GAAG,GAAG,EAAE;IAC7B,OAAO;QACL,GAAG,EAAE,iBAAiB;QACtB,EAAE,EAAE,SAAS;QACb,IAAI,EAAE,WAAW;QACjB,YAAY,EAAE,0BAA0B;QACxC,UAAU,EAAE,0BAA0B;KACvC,CAAC;AACJ,CAAC,CAAC;AARW,QAAA,UAAU,cAQrB"}
