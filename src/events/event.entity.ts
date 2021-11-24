@@ -15,5 +15,7 @@ export class EventEntity {
   startingDate: Date;
 
   @Column()
+  mandatory: boolean;
+  @Column()
   endingDate: Date;
 }

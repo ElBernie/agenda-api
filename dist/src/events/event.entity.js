@@ -31,6 +31,10 @@ __decorate([
 ], EventEntity.prototype, "startingDate", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
+    __metadata("design:type", Boolean)
+], EventEntity.prototype, "mandatory", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
     __metadata("design:type", Date)
 ], EventEntity.prototype, "endingDate", void 0);
 EventEntity = __decorate([

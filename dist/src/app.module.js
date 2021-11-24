@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const config_1 = require("@nestjs/config");
 const graphql_1 = require("@nestjs/graphql");
 const typeorm_1 = require("@nestjs/typeorm");
-const posix_1 = require("path/posix");
+const path = require("path");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const event_entity_1 = require("./events/event.entity");
@@ -29,7 +29,7 @@ AppModule = __decorate([
                 autoLoadEntities: true,
             }),
             graphql_1.GraphQLModule.forRoot({
-                autoSchemaFile: (0, posix_1.join)(process.cwd(), 'src/schema.gql'),
+                autoSchemaFile: path.join(process.cwd(), 'src/schema.gql'),
                 sortSchema: true,
             }),
             events_module_1.EventsModule,

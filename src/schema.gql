@@ -16,6 +16,7 @@ scalar DateTime
 type Event {
   endingDate: DateTime!
   id: ID!
+  mandatory: Boolean!
   name: String!
   startingDate: DateTime!
 }

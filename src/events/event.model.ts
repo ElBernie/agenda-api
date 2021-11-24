@@ -13,4 +13,7 @@ export default class Event {
 
   @Field(() => GraphQLISODateTime, { nullable: false })
   endingDate: Date;
+
+  @Field(() => Boolean, { defaultValue: false })
+  mandatory: boolean;
 }

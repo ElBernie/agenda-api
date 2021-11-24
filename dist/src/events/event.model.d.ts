@@ -3,4 +3,5 @@ export default class Event {
     name: string;
     startingDate: Date;
     endingDate: Date;
+    mandatory: boolean;
 }

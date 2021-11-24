@@ -28,6 +28,10 @@ __decorate([
     (0, graphql_1.Field)(() => graphql_1.GraphQLISODateTime, { nullable: false }),
     __metadata("design:type", Date)
 ], Event.prototype, "endingDate", void 0);
+__decorate([
+    (0, graphql_1.Field)(() => Boolean, { defaultValue: false }),
+    __metadata("design:type", Boolean)
+], Event.prototype, "mandatory", void 0);
 Event = __decorate([
     (0, graphql_1.ObjectType)()
 ], Event);

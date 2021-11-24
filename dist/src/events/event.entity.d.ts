@@ -3,5 +3,6 @@ export declare class EventEntity {
     id: string;
     name: string;
     startingDate: Date;
+    mandatory: boolean;
     endingDate: Date;
 }
